@@ -29,12 +29,33 @@
   font-weight: 500;
 }
 
-.hero-section h1 {
+.hero-section h1,
+.about-section h2,
+.about-section h3,
+.about-section h4 {
   font-family: "Manrope", sans-serif;
+}
+
+.about-section h2,
+.about-section h3 {
+  color: #023e8a;
+}
+
+.about-section h4 {
+  color: #444655;
 }
 
 .hero-section p {
   font-family: "Source Code Pro", monospace;
+}
+
+.about-section p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #222;
+}
+
+.about-section {
+  background-color: #def2f0;
 }
 
 @media (min-width: 768px) {
