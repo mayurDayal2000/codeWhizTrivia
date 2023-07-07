@@ -1,6 +1,7 @@
 .navbar {
   font-family: "Manrope", sans-serif;
-  --bs-navbar-padding-y: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-toggler {
@@ -28,9 +29,17 @@
   font-weight: 500;
 }
 
+.hero-section h1 {
+  font-family: "Manrope", sans-serif;
+}
+
+.hero-section p {
+  font-family: "Source Code Pro", monospace;
+}
+
 @media (min-width: 768px) {
   .navbar {
-    --bs-navbar-padding-y: 2rem;
+    padding-top: 2rem;
   }
 }
 
