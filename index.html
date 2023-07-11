@@ -23,14 +23,19 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-white">
         <div class="container">
+            <!-- Brand -->
             <a href="./index.html" class="navbar-brand fs-3" style="color: #023e8a">codeWhiz Trivia</a>
 
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <!-- Toggler -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="visually-hidden">Toggle Navigation</span>
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="nav-menu">
+            <!-- Collapse -->
+            <div class="navbar-collapse collapse" id="nav-menu">
+                <!-- Navigation -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link active">Home</a>
@@ -41,6 +46,7 @@
                     </li>
                 </ul>
 
+                <!-- button -->
                 <a href="./play-game.html" role="button" class="btn btn-primary d-none d-lg-block"
                     style="background-color: #023e8a">Try Now</a>
             </div>
@@ -48,7 +54,8 @@
     </nav>
 
     <main>
-        <section class="hero-section min-vh-100 d-flex align-items-center">
+        <!-- hero section -->
+        <section class="hero-section">
             <div class="container px-4 py-5 col-xxl-8">
                 <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5 py-5">
                     <div class="col-lg-6">
@@ -56,7 +63,7 @@
                             loading="lazy" />
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center text-md-start">
                         <h1 class="display-5 fw-bold mb-3 text-capitalize">
                             Unleash your inner programmer
                         </h1>
@@ -71,9 +78,10 @@
             </div>
         </section>
 
-        <section class="about-section min-vh-100 d-flex align-items-center" id="about">
+        <!-- about section -->
+        <section class="about-section" id="about">
             <div class="container px-4 py-5">
-                <div class="row row-cols-1 align-items-center gap-5">
+                <div class="row row-cols-1 align-items-center gap-3 gap-md-5">
                     <div class="col">
                         <h2># About the codeWhiz Trivia</h2>
                         <p>
@@ -95,35 +103,68 @@
                     </div>
 
                     <div class="col">
-                        <h3 class="mb-3"># Having Doubts</h3>
+                        <h3 class="mb-3"># Frequently Asked Questions</h3>
 
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <h4>How do I begin?</h4>
-                                <p>
-                                    To get started, simply click on the "Try Now" button. On the
-                                    quiz preference form, choose your desired quiz interface
-                                    settings. Once you're ready, begin answering the questions
-                                    and enjoy the quiz!
-                                </p>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        How do I begin?
+                                    </button>
+                                </h2>
+
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            To get started, simply click on the "Try Now" button. On
+                                            the quiz preference form, choose your desired quiz
+                                            interface settings. Once you're ready, begin answering
+                                            the questions and enjoy the quiz!
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <h4>Is it free to play?</h4>
-                                <p>
-                                    Yes! Our computer science quiz web app is completely free to
-                                    play. We believe in making learning enjoyable and accessible
-                                    to all.
-                                </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        Is it free to play?
+                                    </button>
+                                </h2>
+
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Yes! Our computer science quiz web app is completely
+                                            free to play. We believe in making learning enjoyable
+                                            and accessible to all.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col">
-                                <h4>Are there difficulty levels?</h4>
-                                <p>
-                                    Yes, our quiz web app offers a range of topics and
-                                    difficulty levels to suit everyone, from beginners to coding
-                                    experts.
-                                </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                        Are there difficulty levels?
+                                    </button>
+                                </h2>
+
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Yes, our quiz web app offers a range of topics and
+                                            difficulty levels to suit everyone, from beginners to
+                                            coding experts.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
