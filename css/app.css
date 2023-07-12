@@ -32,7 +32,8 @@
 .hero-section h1,
 .about-section h2,
 .about-section h3,
-.about-section h4 {
+.about-section h4,
+footer p {
   font-family: "Manrope", sans-serif;
 }
 
